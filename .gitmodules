@@ -1,0 +1,3 @@
+[submodule "pycchio.it/themes/m10c"]
+	path = pycchio.it/themes/m10c
+	url = git@github.com:vaga/hugo-theme-m10c.git
