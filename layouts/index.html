@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="home-layout">
+  <aside class="home-sidebar">
+    {{- partial "sidebar-profile.html" . -}}
+  </aside>
+  <div class="home-content">
+    <section class="recent-posts">
+      <h2 class="section-title">Recent Posts</h2>
+      {{ $pages := where .Site.RegularPages "Section" "post" }}
+      {{ range first 10 $pages }}
+        {{- partial "post-card.html" . -}}
+      {{ end }}
+      {{ if gt (len $pages) 10 }}
+      <div class="view-all">
+        <a href="{{ "archive/" | relURL }}">View all posts &rarr;</a>
+      </div>
+      {{ end }}
+    </section>
+  </div>
+</div>
+{{ end }}

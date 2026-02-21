@@ -1,7 +1,7 @@
 <!doctype html>
-<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<html lang="{{ .Site.LanguageCode | default "en-us" }}" data-theme="light">
   <head>
-    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} // {{ .Site.Title }}{{ end }}</title>
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
     <link rel="shortcut icon" href="{{ .Site.Params.favicon | default "/favicon.ico" }}" />
     <meta charset="utf-8" />
     {{ hugo.Generator }}
@@ -10,50 +10,22 @@
     <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    {{ $style := resources.Get "css/main.scss" | resources.ExecuteAsTemplate "css/main.scss" . | css.Sass | resources.Minify | resources.Fingerprint -}}
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    {{ $style := resources.Get "css/custom.css" | resources.Minify | resources.Fingerprint -}}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
-    <style>
-      * { font-family: 'Roboto', sans-serif; }
-    </style>
     {{ with .OutputFormats.Get "rss" -}}
     {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
     {{ end }}
-
-    {{ template "_internal/google_analytics.html" . }}
-    {{ template "_internal/twitter_cards.html" . }}
     {{ template "_internal/opengraph.html" . }}
-
   </head>
   <body>
-    <header class="app-header">
-      <a href="{{ "" | relURL }}"><img class="app-header-avatar" src="{{ .Site.Params.avatar | default "avatar.jpg" | relURL }}" alt="{{ .Site.Params.author | default "John Doe" }}" /></a>
-      <span class="app-header-title">{{ .Site.Title }}</span>
-      {{- with .Site.Menus.main }}
-      <nav class="app-header-menu">
-        {{- range $key, $item := . }}
-          {{- if ne $key 0 }}
-            {{ $.Site.Params.menu_item_separator | default " - " | safeHTML }}
-          {{ end }}
-          <a class="app-header-menu-item" href="{{ $item.URL }}">{{ $item.Name }}</a>
-        {{- end }}
-      </nav>
-      {{- end }}
-      <p>{{ .Site.Params.description | default "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium." }}</p>
-      {{- with .Site.Params.social }}
-      <div class="app-header-social">
-        {{ range . }}
-          <a href="{{ .url }}" target="_blank" rel="noreferrer noopener me">
-            {{ partial "icon.html" (dict "ctx" $ "name" .icon "title" .name) }}
-          </a>
-        {{ end }}
-      </div>
-      {{- end }}
-    </header>
-    <main class="app-container">
+    {{- partial "header.html" . -}}
+    <div class="site-wrapper">
       {{ block "main" . }}
         {{ .Content }}
       {{ end }}
-    </main>
+    </div>
+    {{- partial "footer.html" . -}}
+    {{- partial "theme-toggle-script.html" . -}}
   </body>
 </html>
