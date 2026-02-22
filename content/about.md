@@ -13,9 +13,3 @@ This blog is my space to write about things I learn — small pills of knowledge
 picked up from day-to-day work and personal projects. 
 
 Here's why I started this blog: [A New Beginning](/post/a-new-beginning/)
-
-### Tech I Work With
-
-- **Languages:** Python, Go, JavaScript
-- **Tools:** Docker, Git, Linux
-- **Interests:** Static site generators, automation, clean code
