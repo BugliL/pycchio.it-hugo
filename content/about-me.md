@@ -1,6 +1,7 @@
 ---
 title: "About me"
 layout: "single"
+date: "2026-02-23T16:26:32+01:00"
 ---
 
 <img class="centered-image" src="../images/avatar.png" alt="avatar" width="350" />
