@@ -429,4 +429,15 @@ jobs:
 
 So, here it is, a simple and clear workflow to automate the deployment of my blog to GitHub Pages. I don't have to do anything, just push my changes to the `main` branch and the workflow will take care of the rest.
 
-Let's write more posts!
+Last step, I will add a badge to my `README.md` file to show the status of the workflow:
+
+![Create status badge](./status-badge.png)
+
+
+```markdown
+[![Build and deploy](https://github.com/BugliL/pycchio.it-hugo/actions/workflows/hugo-publishing.yaml/badge.svg)](https://github.com/BugliL/pycchio.it-hugo/actions/workflows/hugo-publishing.yaml)
+
+```
+
+Done and deployed! Now I can focus on writing content for my blog, and let the
+workflow take care of the deployment.
