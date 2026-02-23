@@ -565,6 +565,10 @@ img {
   box-shadow: var(--shadow-sm);
 }
 
+.post-content img.centered-image {
+  margin: 1.5rem auto;
+}
+
 .post-content table {
   width: 100%;
   border-collapse: collapse;
@@ -873,6 +877,12 @@ img {
 
 .highlight {
   overflow: scroll;
+}
+
+.centered-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ----- Responsive ----- */
