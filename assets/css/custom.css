@@ -871,6 +871,10 @@ img {
   color: var(--accent);
 }
 
+.highlight {
+  overflow: scroll;
+}
+
 /* ----- Responsive ----- */
 @media (max-width: 1024px) {
   .home-layout {
