@@ -1,7 +1,7 @@
 <aside class="sidebar-profile">
   <div class="profile-card">
     <div class="profile-avatar">
-      {{ $avatar := .Site.Params.avatar | default "/images/avatar.jpg" }}
+      {{ $avatar := .Site.Params.avatar | default "images/avatar.jpg" }}
       <img src="{{ $avatar | relURL }}" alt="{{ .Site.Params.author }}" loading="lazy" />
     </div>
     <h2 class="profile-name">{{ .Site.Params.author }}</h2>

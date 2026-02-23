@@ -173,3 +173,21 @@ jobs:
         uses: actions/deploy-pages@v4
 
 ```
+
+That's an insane amount of configuration to publish a blog, but it works. I
+don't have to do anything, just push my changes to the `main` branch and the
+workflow will take care of the rest. It will build the site and deploy it to
+GitHub Pages.
+
+![workflow](./workflow.png)
+
+
+### Problems found
+
+**Image issues**:
+A bunch of tries didn't work: the blog was published but the images were not.
+Half of the problem was caused by the file disposition in the treeview. I fixed
+this with this disposition:
+
+![file-treeview](./file-treeview.png)
+

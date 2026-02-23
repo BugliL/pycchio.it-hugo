@@ -44,7 +44,7 @@ title = 'Pycchio.it'
 [params]
   author = "Lorenzo Bugli"
   description = "Software engineer sharing knowledge and experiences."
-  avatar = "/images/avatar.jpg"
+  avatar = "images/avatar.jpg"
   bio = "Software engineer sharing knowledge and experiences about software architecture, and how to build things."
   dateFormat = "Jan 2, 2006"
 
