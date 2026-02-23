@@ -38,9 +38,16 @@ The pages are hosted on `github.io` and you can use a custom domain if you want,
 
 ## How to automate the deployment of my blog?
 
-I have found a good explanation (here)[https://gohugo.io/host-and-deploy/host-on-github-pages/] on how to deploy a Hugo blog on GitHub Pages.
+I have found a good explanation [here](https://gohugo.io/host-and-deploy/host-on-github-pages/) 
+on how to deploy a Hugo blog on GitHub Pages.  I created my repository as
+`private`, but, unfortunately, GitHub Pages only works with public repositories
+for free accounts. Since I don't want to pay for a personal GitHub account, I
+have changed my repository to public.
 
-The first thing I did was to create a workflow file in my repository. The file is called `.github/workflows/deploy.yml` and it contains the following code:
+![change-visibility](./change-visibility.png)
+
+After that, I created a workflow file in my repository. 
+`.github/workflows/hugo-publishing.yaml` content:
 
 ```yaml
 name: Deploy Blog
