@@ -11,8 +11,8 @@ title = 'Pycchio.it'
     endLevel = 4
     ordered = false
   [markup.highlight]
-    style = "tango"
-    lineNos = false
+    style = "onedark"
+    lineNos = true
     noClasses = true
 
 [menu]
