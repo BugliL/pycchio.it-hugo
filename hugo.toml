@@ -13,7 +13,7 @@ title = 'Pycchio.it'
   [markup.highlight]
     style = "tango"
     lineNos = false
-    noClasses = false
+    noClasses = true
 
 [menu]
 
