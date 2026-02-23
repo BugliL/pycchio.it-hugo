@@ -5,7 +5,7 @@ title: "A New Beginning"
 tags: ["hugo", "learning", "knowledge", "blog", "go"]
 description: |-
     This is a beginning of a new project. In my job I need to improve my knowledge,
-    to embrace new technologies and to be able to adapt to the changes. I want to
+    to embrace new technologies and to be able to adapt to the changes.<br /> I want to
     share some of it, small pills of knowledge, that I will learn along the way.
 ---
 
