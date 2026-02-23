@@ -42,8 +42,8 @@ title = 'Pycchio.it'
 
   [[menu.main]]
     identifier = "about"
-    name = "About"
-    url = "/about/"
+    name = "About Me"
+    url = "/about-me/"
     weight = 4
 
 [params]
