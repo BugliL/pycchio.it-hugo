@@ -1,6 +1,6 @@
 ---
 date: "2026-03-03T18:33:16+01:00"
-draft: true
+draft: false
 title: "Software Engineering Is Not Writing Code"
 description: |-
     That's true, being a software engineer is not only converting caffeine into
@@ -110,6 +110,8 @@ way, without writing code at all. There are so many thing out there, so many
 different software and tools that can me adapted to solve the problem without
 writing a single line of code.
 
+> Most performance wins come from removing work, not adding cleverness.
+
 Most of the problems I faced with are not real software requirements, the
 problem is hidden in the process, in the way people are doing it. Few years ago
 I had lots of helpdesk tickets about a broken feature of a software. It was a
@@ -143,3 +145,5 @@ you should be sure that you can repay it in the future when the updating of the
 software is needed.
 
 
+Continue on part 2: [Software Engineering Is Not Writing Code - Part
+2](./index-2.md)
