@@ -124,7 +124,7 @@ to maintain something bad.
 Focusing on the moon instead of the finger helps to find a better solution, and
 sometimes the best solution is not writing code at all, it's only thinking about
 the process and discuss with people to find a better way to achieve the same
-goal.
+goal offline too.
 
 This concept goes well with usign a new technology to do the job. Are you
 putting an home made cache solution or do you prefer to use Redis? Are you using
@@ -133,17 +133,112 @@ AWS SQS or RabbitMQ? Of course, it's technical debt, but it's a technical debt
 that can be managable with small effort instead of inventing a new wheel and
 maintain it for years.
 
+> Novelty is a loan you repay in outages, hiring, and cognitive overhead.
+
+I've learned this lesson the hard way.
+
+First time I used `DJango` I was so excited! Every framework and every tool has
+a downside, bigger or smaller but I couldn't see it at time. I know now that
+there's lots of things behind the scenes that are critically and if not knowed,
+they can cause a lot of problems in the future. 
+
 You should be sure that you can manage and comprehend the new technology, it
 can't be a leap of faith. Every technical debt is a loan, and you should be sure
 that you can repay it in the future with paying fees of understanding and
 knoledge. Make baby steps in adopting new technologies but is important to move
 on a little bit. 
 
-Fossilizing on the same technology is a technical debt too, it's a loan that you
-are taking to avoid the cognitive overhead of learning and do something new, but
-you should be sure that you can repay it in the future when the updating of the
-software is needed.
+On the other hand, fossilizing on the same technology is a `technical debt` too,
+it's a loan that you are taking to avoid the cognitive overhead of learning and
+do something new, but you should be sure that you can repay it in the future
+when the updating of the software is needed. That day will come, and if you are
+not prepared, it will be a long work to do.
 
 
-Continue on part 2: [Software Engineering Is Not Writing Code - Part
-2](./index-2.md)
+## Shared understanding...
+
+In any product organization, real progress does not begin when code is written —
+it begins when understanding is shared. Stakeholders define business goals,
+product managers translate those goals into direction, and developers turn that
+direction into working systems. Each group operates from a different
+perspective, with different incentives and vocabularies. Without deliberate
+alignment, these perspectives drift apart.
+
+![Develop tree](./develop-tree.png)
+
+Without shared understanding, teams often build the wrong thing perfectly.
+Developers may implement features exactly as written, yet miss the underlying
+business objective. Product managers may prioritize based on assumptions that
+were never validated technically. Stakeholders may expect outcomes that were
+never realistically scoped. The result is rework — specifications rewritten,
+features redesigned, timelines extended. Not because the team lacked skill, but
+because they lacked a shared mental model.
+
+Shared understanding between stakeholders, product managers, and developers is
+the foundation of high-quality execution. It ensures that everyone agrees not
+only on what is being built, but why it is being built, for whom, and how
+success will be measured. When shared understanding is strong, conversations
+shift from defensive corrections to collaborative problem-solving.
+
+I've done a speech about this topic in a conference, and I've seen that many
+people have the same problem in their teams. 
+
+> Parlare la stessa lingua
+> scrivere requisiti che diventano software
+
+translated is
+
+> Speak the same language
+> write requirements that become software
+
+[Link to presentation](https://buglil.github.io/Talks/parlare-la-stessa-lingua/#/)
+
+The lack of communication is a common source of friction and inefficiency
+between people. I've talked with many different people of different companies
+and role, but everyone has the same problem, they don't understand each other,
+they don't speak the same language, they don't have the same mental model.
+
+In the end, true efficiency comes from `alignment`, not speed. Teams that invest
+time in building a common understanding move with greater precision and far less
+friction. When goals, constraints, and expectations are collectively understood,
+specifications stop being open to interpretation and become shared commitments.
+This clarity prevents unnecessary revisions, limits misunderstandings, and
+ensures that what gets delivered matches what was intended.
+
+## ...and shared documentation
+
+This sharing of understanding is not only between people, but also between
+engineers amd how they are doing things. Documentation is a key part of this
+sharing, and it's not only about writing things down, but also about sharing the
+knowledge and the understanding of how things are working. This helps engineers
+debug things faster, undesrstand what could be the problem, and potentially how
+to solve it.
+
+Documentation and well-written comments are not bureaucratic overhead; they are
+the infrastructure that allows teams to think clearly together without being
+present physically. Without them, knowledge remains trapped in individual minds.
+With them, understanding becomes shared, durable, and scalable.
+
+It could not be a good idea to write documentation for every single line of
+code, but it's easy to have TOO MUCH of it. Finding the right balance is a hard
+task, but it's important to find it, in my experience, the best way to do it is
+to write documentation for a big "why" than a small "how". "Why" is something
+that is not changing much, and it's something that is not visible in the code,
+on the other hand, "how" is something that is changing a lot, and it's something
+time consuming when you have to update it.
+
+"How" can be written by using "executable documentation" too.
+Docker files, Terraform files, Ansible playbooks, and other forms of "executable
+documentation" are particularly powerful. They not only describe how systems are
+configured, but also serve as living documentation that evolves with the
+software. Even for small projects I try to write down the infrastructure as
+code, to have a clear understanding of how things are working for others and the
+future me.  Devcontainers are a good example of this, they are a way to share
+the development environment with other people, and they are a good way to
+document the development environment setup.
+
+IaC is the new way of writing infrastructure documentation, next to a small
+markdown file when too much complicated.
+
+
+## Conclusion
