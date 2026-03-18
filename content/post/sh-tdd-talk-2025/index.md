@@ -1,6 +1,6 @@
 ---
 date: "2025-11-26T23:14:16+01:00"
-draft: true
+draft: false
 title: "From Zero to Tested: How to Actually Get Started"
 tags: ["talk", "tdd", "test-driven development", "testing"]
 description: |-
