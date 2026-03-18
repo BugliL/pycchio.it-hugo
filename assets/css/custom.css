@@ -596,7 +596,8 @@ img {
 
 /* ----- TOC Sidebar ----- */
 .toc-sidebar {
-  position: relative;
+  position: sticky;
+  top: 10vh;
 }
 
 .toc-wrapper {
