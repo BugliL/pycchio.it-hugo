@@ -32,8 +32,10 @@ the challenges I faced along the way.
 > initial complexity, and which patterns make the process smooth and natural. A
 > practical talk, full of concrete examples and insights born from real scenarios.
 
-The event was organized by [Schrödinger Hat](https://schroedinger-hat.org/), with
-the support of [The Social Hub Florence Belfiore](https://www.thesocialhub.co/florence-belfiore/), 
+The event was organized by 
+[Schrödinger Hat](https://schroedinger-hat.org/participate/events/sh-session-tdd-test-driven-development), 
+with the support of 
+[The Social Hub Florence Belfiore](https://www.thesocialhub.co/florence-belfiore/), 
 and is part of the SH Branches initiative, created to promote meetups focused on
 knowledge-sharing, discussion, and networking across Italy and beyond.
 
