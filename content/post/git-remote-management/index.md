@@ -19,6 +19,9 @@ I will write down the flow and the commands that I have used to manage my
 remotes when I wanted to contribute to a repository that I don't have write
 access to. 
 
+I will use this blog repository as an example to explain the flow and be less
+abstract, [pycchio.it-hugo](https://github.com/BugliL/pycchio.it-hugo).
+
 ## Git clone
 
 When contributing to a remote repository, you often need to clone the repository
@@ -263,10 +266,6 @@ topics. I highly recommend it to anyone who wants to learn git.
 If you need an english version I think that 
 [Git Essentials](https://www.bol.com/nl/nl/p/git-essentials-second-edition/9200000079289390/) 
 from the same author is a good choice, but I haven't read it so I can't say for
-sure. Although this is a very good book, it doesn't cover the specific flow and
-command to learn when you want to contribute to a remote repository that you
-don't have write access to. This is what I want to cover in this article.
+sure. 
 
-I will use this blog repository as an example to explain the flow and be less
-abstract, [pycchio.it-hugo](https://github.com/BugliL/pycchio.it-hugo).
 
